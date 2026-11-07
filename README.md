@@ -1,9 +1,9 @@
 # berrak-cilt-hastaliklari-teshis-sitesi
 Bu projenin amacı cilt hastalıklarınızın fotoğrafını yükleyip ne durumda olduğunuzu göstermektedir. Kesinlik içeren tavsiye değildir doktorunuza başvurun.
 
-##KULLANILAN VERİ SETİ##
+#KULLANILAN VERİ SETİ#
 HAM10000
-##MODELLER##
+#MODELLER#
 MOBİLENETV2
-##SİTE LİNKİ##
+#SİTE LİNKİ#
 https://berrak.netlfy.app
