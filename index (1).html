@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berrak | Cilt Hastalığı Tespiti</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="ust">
+  <a class="marka" href="#">Berrak</a>
+  <nav>
+    <a href="#degerlendirme">Değerlendirme</a>
+    <a href="#rehber">ABCDE</a>
+    <a href="#kanser">Cilt kanseri</a>
+    <a href="#bakim">Cilt bakımı</a>
+    <a href="#sss">SSS</a>
+    <a href="#gecmis">Geçmiş</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-yazi">
+    <span class="ust-etiket">Ön değerlendirme aracı</span>
+    <h1>Cilt Hastalığı <span class="renk">Tespiti</span></h1>
+    <p>Cildindeki lekenin fotoğrafını yükle, belirtileri işaretle. Sakin ve anlaşılır bir ön değerlendirme al.</p>
+    <a class="dugme" href="#degerlendirme">Değerlendirmeye başla</a>
+    <p class="gizlilik">Fotoğrafın cihazından çıkmaz, hiçbir yere gönderilmez.</p>
+  </div>
+  <div class="gorsel" aria-hidden="true">
+    <div class="daire">
+      <svg viewBox="0 0 200 200"><defs><radialGradient id="g" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#1c4f8f"/><stop offset="1" stop-color="#0a2347"/></radialGradient></defs>
+        <circle cx="100" cy="100" r="96" fill="url(#g)"/>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#6aa6e3" stroke-width="1.4" stroke-dasharray="2 7" opacity=".7"/>
+        <path d="M76 98c4-18 26-24 41-13 13 9 11 28-2 37-15 10-41 2-39-24z" fill="#8ec5f0" opacity=".9"/>
+        <path d="M100 8v22M100 170v22M8 100h22M170 100h22" stroke="#8ec5f0" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <span class="tara"></span>
+    </div>
+    <span class="cip c1">1 · Fotoğraf</span><span class="cip c2">2 · Belirtiler</span><span class="cip c3">3 · Sonuç</span>
+  </div>
+  <svg class="dalga" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C240,100 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z"/></svg>
+</section>
+
+<main>
+<ul class="ozellik">
+  <li><strong>3</strong><b>adım</b><span>Fotoğraf, belirtiler, sonuç</span></li>
+  <li><strong>0</strong><b>yükleme</b><span>Fotoğrafın cihazından çıkmaz</span></li>
+  <li><strong>7</strong><b>cilt sınıfı</b><span>Model yedi lezyon türü arasında tahmin yapar</span></li>
+</ul>
+<div class="uyari">Bu bir teşhis değildir. Sonuçlar yalnızca ön değerlendirmedir ve hatalı olabilir. Şüpheli bir lekede mutlaka bir dermatoloji uzmanına görün.</div>
+
+<section id="degerlendirme" class="kart">
+  <h2>Ön değerlendirme</h2>
+
+  <h3><span class="no">1</span>Fotoğraf</h3>
+  <label id="alan" class="alan" for="foto">
+    <img id="onizleme" alt="Yüklenen cilt fotoğrafı" hidden>
+    <span id="alan-yazi"><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="6"/><circle cx="18" cy="21" r="3.5"/><path d="M8 36l11-10 8 7 6-5 9 8"/></svg><strong>Fotoğrafı buraya sürükle</strong><em>ya da seçmek için tıkla</em></span>
+  </label>
+  <input id="foto" type="file" accept="image/*" hidden>
+  <input id="kamera" type="file" accept="image/*" capture="environment" hidden>
+  <div class="sira">
+    <button type="button" class="ikincil" id="kamera-dugme">Kamerayla çek</button>
+    <button type="button" class="ikincil" id="foto-sil" hidden>Fotoğrafı kaldır</button>
+  </div>
+  <p class="ipucu">İyi ışıkta, lekeye yakın ve net çekilmiş bir fotoğraf daha iyi sonuç verir.</p>
+
+  <h3><span class="no">2</span>Belirtiler</h3>
+  <div class="belirtiler">
+    <label><input type="checkbox" class="belirti"><span>İki yarısı birbirine benzemiyor</span></label>
+    <label><input type="checkbox" class="belirti"><span>Kenarları düzensiz, tırtıklı ya da bulanık</span></label>
+    <label><input type="checkbox" class="belirti"><span>Birden fazla renk var</span></label>
+    <label><input type="checkbox" class="belirti"><span>Çapı 6 mm’den büyük</span></label>
+    <label><input type="checkbox" class="belirti"><span>Son aylarda büyüdü ya da değişti</span></label>
+    <label><input type="checkbox" class="belirti"><span>Kaşınıyor, kanıyor ya da kabuk bağlıyor</span></label>
+    <label><input type="checkbox" class="belirti"><span>Yara 4 haftadan uzun sürede iyileşmiyor</span></label>
+  </div>
+
+  <h3><span class="no">3</span>Ayrıntılar</h3>
+  <div class="ikili">
+    <label>Vücut bölgesi
+      <select id="bolge">
+        <option>Yüz</option><option>Boyun</option><option>Gövde</option>
+        <option>Kol</option><option>El</option><option>Bacak</option>
+        <option>Ayak</option><option>Diğer</option>
+      </select>
+    </label>
+    <label>Ne zamandır var?
+      <select id="sure">
+        <option>1 aydan kısa</option><option>1-6 ay</option>
+        <option>6 aydan uzun</option><option>Doğuştan</option>
+      </select>
+    </label>
+  </div>
+
+  <button type="button" class="dugme" id="analiz">Ön değerlendirmeyi göster</button>
+  <p id="hata" class="hata" role="alert" hidden></p>
+  <p id="model-durum" class="ipucu">Model durumu kontrol ediliyor...</p>
+</section>
+
+<section id="sonuc" class="kart sonuc" tabindex="-1" aria-live="polite" hidden>
+  <div id="rozet" class="rozet"></div>
+  <h2 id="s-baslik"></h2>
+  <div class="olcu"><i id="s-olcu"></i></div>
+  <p id="s-metin"></p>
+  <p id="s-takip" class="takip" hidden></p>
+  <div id="s-oto" hidden>
+    <h3>Fotoğraftan otomatik ABCD analizi</h3>
+    <canvas id="oto-tuval" class="tuval" width="320" height="320" role="img" aria-label="Fotoğraf üzerinde otomatik bulunan leke sınırı"></canvas>
+    <p id="oto-not" class="ipucu"></p>
+    <ul id="oto-liste" class="cubuklar"></ul>
+  </div>
+  <div id="s-model" hidden>
+    <h3>Fotoğraf analizi (en olası 3)</h3>
+    <ul id="s-liste" class="cubuklar"></ul>
+  </div>
+  <p id="s-ozet" class="ipucu"></p>
+  <p class="ipucu">Bu bir teşhis değildir. Bir dermatoloji uzmanına görünün.</p>
+  <div class="sira">
+    <button type="button" class="ikincil" id="kopyala">Özeti kopyala</button>
+    <button type="button" class="ikincil" id="hatirlat">Aylık hatırlatıcı ekle</button>
+    <button type="button" class="ikincil" id="yazdir">Yazdır</button>
+  </div>
+  <p id="kopya-durum" class="ipucu" hidden></p>
+</section>
+
+<section id="rehber" class="kart">
+  <h2>ABCDE rehberi</h2>
+  <p>Hekimlerin de kullandığı beş basit işaret. Birini fark edersen not al ve takip et.</p>
+  <details><summary>A: Asimetri</summary><p>Lekeyi ortadan ikiye böldüğünü düşün. İki yarı birbirine benzemiyorsa dikkat et.</p></details>
+  <details><summary>B: Kenar</summary><p>Düzgün yuvarlak kenar normaldir. Tırtıklı, bulanık ya da yayılan kenar uyarı işaretidir.</p></details>
+  <details><summary>C: Renk</summary><p>Tek tip kahverengi çoğu zaman sorun değildir. Siyah, mavi, kırmızı ya da beyaz tonların karışması dikkat gerektirir.</p></details>
+  <details><summary>D: Çap</summary><p>6 mm’den (kalem silgisi kadar) büyük lekeler daha dikkatli izlenmelidir.</p></details>
+  <details><summary>E: Evrim</summary><p>Büyüme, şekil ya da renk değişimi, kaşıntı veya kanama en önemli işarettir.</p></details>
+  <details><summary>Ne zaman hemen doktora?</summary><p>Kanayan, iyileşmeyen ya da hızla değişen bir leke fark ettiysen beklemeden bir dermatoloji uzmanına başvur.</p></details>
+</section>
+
+<section id="kanser" class="kart">
+  <h2>Cilt kanseri hakkında</h2>
+  <p>Cilt kanseri, cildi oluşturan hücrelerin kontrolsüz çoğalmasıdır. En önemli nedeni güneşten ve solaryumdan gelen ultraviyole (UV) ışınlarıdır. Erken fark edildiğinde büyük çoğunlukla başarıyla tedavi edilir.</p>
+
+  <h3>Üç ana tür</h3>
+  <div class="turler">
+    <div><b>Bazal hücreli karsinom</b><span>En sık görülen türdür. Yavaş büyür ve çok nadiren vücudun başka yerlerine yayılır. Genelde yüz, burun ve kulak gibi güneş gören yerlerde, inci gibi parlak bir kabarıklık ya da iyileşmeyen bir yara olarak görülür.</span></div>
+    <div><b>Skuamöz hücreli karsinom</b><span>İkinci en sık türdür. Kabuklu, pullu, sert ya da kanayan bir kızarıklık olarak görülebilir. Dudak, kulak ve el sırtı gibi güneş gören yerlerde sık çıkar. Tedavi edilmezse yayılabilir.</span></div>
+    <div><b>Melanom</b><span>Daha az görülür ama en tehlikeli türdür, çünkü erken dönemde bile yayılabilir. Yeni çıkan ya da değişen bir ben gibi görülebilir. Erken yakalandığında tedavi şansı yüksektir.</span></div>
+  </div>
+
+  <h3>Riski artıran şeyler</h3>
+  <ul class="liste">
+    <li>Çok sayıda güneş yanığı, özellikle çocukluk döneminde</li>
+    <li>Solaryum kullanımı</li>
+    <li>Açık ten, açık renkli göz ve saç, güneşte kolay yanma</li>
+    <li>Çok sayıda ya da büyük ben</li>
+    <li>Ailede melanom ya da cilt kanseri öyküsü</li>
+    <li>Bağışıklığı baskılayan hastalıklar ya da ilaçlar</li>
+    <li>Uzun yıllar güneşte çalışmak ve ileri yaş</li>
+  </ul>
+
+  <div class="not"><b>“Çirkin ördek yavrusu” işareti</b><span>Vücudundaki benlerin çoğu birbirine benzer. Diğerlerinden belirgin biçimde farklı görünen tek bir leke (daha koyu, daha büyük ya da farklı şekilli) dikkat çekmelidir. Onu bir hekime göster.</span></div>
+  <div class="not"><b>Koyu tenlilerde de olur</b><span>Koyu tenlilerde melanom sıklıkla güneş görmeyen yerlerde çıkar: avuç içi, ayak tabanı ve tırnak altı. Tırnakta çizgi şeklinde koyu bir bant ya da tırnağın çevresine yayılan koyu renk dikkat gerektirir.</span></div>
+
+  <h3>Tanı ve tedavi</h3>
+  <details><summary>Tanı nasıl konur?</summary><p>Dermatolog lekeyi önce dermatoskop denen özel bir büyüteçle inceler. Şüphe varsa lekenin bir parçası ya da tamamı alınıp mikroskopta incelenir (biyopsi). Kesin tanıyı yalnızca bu inceleme koyar.</p></details>
+  <details><summary>Nasıl tedavi edilir?</summary><p>Çoğu cilt kanserinde ilk yöntem lekenin cerrahi olarak çıkarılmasıdır. Türe ve evreye göre krem, dondurma, ışın tedavisi ya da ilaç tedavileri de kullanılabilir. Tedaviyi hekimin belirlediği plan yönlendirir.</p></details>
+</section>
+
+<section id="bakim" class="kart">
+  <h2>Cilt bakım rehberi</h2>
+  <p>Cilt kanserinden korunmanın en etkili yolu güneşten korunmaktır. Güzel bir cilt için gereken şeyler de büyük ölçüde aynı.</p>
+
+  <div class="ipuclari">
+    <div><b>Güneşten koru</b><span>En sıcak saatlerde gölgeyi seç, her gün güneş kremi sürmeyi alışkanlık yap.</span></div>
+    <div><b>Ayda bir kendini kontrol et</b><span>Aynanın karşısında tüm vücudunu, zor görünen yerlerle birlikte gözden geçir.</span></div>
+    <div><b>Fotoğrafla takip et</b><span>Aynı ışıkta ve aynı mesafeden çekilen fotoğraflar değişimi fark etmeni kolaylaştırır.</span></div>
+    <div><b>Düzenli hekim kontrolü</b><span>Çok beni olanlar ve ailesinde cilt kanseri olanlar için yıllık muayene önemlidir.</span></div>
+  </div>
+
+  <h3>Cilt tipini seç</h3>
+  <label class="secici">Güneşte cildin nasıl tepki verir?
+    <select id="cilt-tipi">
+      <option value="">Bir seçenek seç</option>
+      <option value="1">Hep yanar, hiç bronzlaşmaz</option>
+      <option value="2">Kolay yanar, zor bronzlaşır</option>
+      <option value="3">Bazen yanar, yavaş bronzlaşır</option>
+      <option value="4">Az yanar, kolay bronzlaşır</option>
+      <option value="5">Nadiren yanar, koyu bronzlaşır</option>
+      <option value="6">Hemen hiç yanmaz</option>
+    </select>
+  </label>
+  <p id="cilt-tipi-sonuc" class="not-kutu">Bir cilt tipi seç, sana kısa bir not göstereyim.</p>
+
+  <h3>UV indeksi rehberi</h3>
+  <p class="ipucu">Hava durumu uygulamalarında günün UV indeksini görebilirsin. İndeks 3 ve üzerindeyse güneş koruması gerekir.</p>
+  <ul class="uv">
+    <li><span class="u1">0-2</span><div><b>Düşük</b> Genelde özel önlem gerekmez. Hassas ciltliler yine de krem sürebilir.</div></li>
+    <li><span class="u2">3-5</span><div><b>Orta</b> Krem, şapka ve güneş gözlüğü kullan. Öğle saatlerinde gölge ara.</div></li>
+    <li><span class="u3">6-7</span><div><b>Yüksek</b> Koruma şart. 10.00-16.00 arasında güneşten uzak dur.</div></li>
+    <li><span class="u4">8-10</span><div><b>Çok yüksek</b> Korumasız cilt kısa sürede yanabilir. Ekstra önlem al.</div></li>
+    <li><span class="u5">11+</span><div><b>Aşırı</b> Mümkünse dışarı çıkma. Çıkarsan krem, şapka ve kapalı giysiyle tam koruma sağla.</div></li>
+  </ul>
+
+  <h3>Pratik öneriler</h3>
+  <details><summary>Güneş kremi nasıl kullanılır?</summary><p>SPF 30 ya da üzeri, geniş spektrumlu (hem UVA hem UVB’ye karşı) bir krem seç. Dışarı çıkmadan yaklaşık 15-20 dakika önce sür. Tüm vücut için yaklaşık bir shot bardağı (30 ml), yüzün için cömert bir miktar kullan. Her 2 saatte bir, terleyince ya da suya girince yenile. Bulutlu günlerde de gereklidir.</p></details>
+  <details><summary>Güneşten korunmanın diğer yolları</summary><p>Gölgeyi tercih et, 10.00-16.00 arasında doğrudan güneşten kaçın. Geniş kenarlı şapka, UV korumalı güneş gözlüğü ve uzun kollu, sıkı dokulu giysi kremin yanında en iyi korumadır. Solaryumdan uzak dur.</p></details>
+  <details><summary>Günlük cilt bakımı</summary><p>Yüzünü ılık suyla nazikçe temizle, çok sıcak su cildi kurutur. Cildine uygun bir nemlendirici kullan. Sabah en önemli adım güneş kremidir. Cildi ovmaktan, sert ve yoğun parfümlü ürünlerden kaçın. Yeni bir ürün cildini tahriş ediyorsa kullanmayı bırak.</p></details>
+  <details><summary>Yaşam alışkanlıkları</summary><p>Sigara cilt yaşlanmasını hızlandırır ve yara iyileşmesini yavaşlatır, bırakmak cildine de yarar. Yeterli uyku, dengeli beslenme, bol su ve düzenli hareket genel cilt sağlığını destekler.</p></details>
+  <details><summary>Ben ve lekelerle ilgili</summary><p>Benleri evde kazıma, yakma ya da krem ve sirke gibi yöntemlerle çıkarmaya çalışma. Kanser şüphesi olan bir lekeyi evde çıkarmak tanıyı geciktirebilir. Leke aldırmak istiyorsan bir dermatoloji uzmanına git.</p></details>
+  <details><summary>Aylık kendi kendine muayene nasıl yapılır?</summary><p>Tam boy aynanın karşısında, iyi ışıkta başla. Saçlı deri, yüz, kulak arkası ve boynu incele. Sonra kollar, avuç içleri ve tırnaklar, gövde, sırt (el aynasıyla), bacaklar, ayak tabanları ve ayak tırnaklarına bak. Şüpheli bir lekenin fotoğrafını çek ve bir sonraki ay karşılaştır.</p></details>
+</section>
+
+<section id="sss" class="kart">
+  <h2>Sık sorulanlar</h2>
+  <details><summary>Her ben kansere dönüşür mü?</summary><p>Hayır. Benlerin çok büyük kısmı zararsızdır. Ama çok sayıda ben olması riski artırır. Yeni çıkan, değişen ya da diğerlerinden farklı görünen benler hekime gösterilmelidir.</p></details>
+  <details><summary>Cilt kanseri bulaşıcı mı?</summary><p>Hayır, kimseden kimseye bulaşmaz.</p></details>
+  <details><summary>Bulutlu havada güneş kremi gerekir mi?</summary><p>Evet. UV ışınlarının önemli bir kısmı bulutları geçer.</p></details>
+  <details><summary>Solaryum güvenli mi?</summary><p>Hayır. Solaryum cilt kanseri riskini artırır, güvenli bir bronzlaşma yöntemi değildir.</p></details>
+  <details><summary>Biyopsi kanseri yayar mı?</summary><p>Hayır. Biyopsi kesin tanı için gereklidir ve kanseri yaymaz.</p></details>
+  <details><summary>Ne zaman dermatoloğa gitmeliyim?</summary><p>Yeni çıkan, değişen, kanayan, iyileşmeyen ya da diğerlerinden farklı görünen bir leke fark edersen beklemeden bir dermatoloji uzmanına başvur. Türkiye’de MHRS üzerinden dermatoloji randevusu alabilirsin.</p></details>
+</section>
+
+<section id="gecmis" class="kart">
+  <h2>Geçmiş değerlendirmelerim</h2>
+  <p class="ipucu">Sadece bu cihazda saklanır. Fotoğraflar kaydedilmez.</p>
+  <ul id="gecmis-liste" class="gecmis"></ul>
+  <button type="button" class="ikincil" id="gecmis-sil" hidden>Geçmişi temizle</button>
+</section>
+
+<section id="sinirlar" class="kart">
+  <h2>Bilmen gerekenler</h2>
+  <p>Bu site bir ders projesidir ve gerçek bir tıbbi araç değildir.</p>
+  <p>Model, çoğunlukla açık tenli hastalardan alınmış dermatoskop görüntüleriyle eğitildi. Telefon fotoğraflarında ve koyu tenlerde daha az güvenilir çalışır.</p>
+  <p>Sonuç hiçbir zaman “hastalığın yok” anlamına gelmez. Endişen varsa bir hekime görün.</p>
+</section>
+</main>
+
+<footer>Berrak, bir ders projesidir. Teşhis ve tedavi için bir hekime başvurun.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
